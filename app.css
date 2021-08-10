@@ -140,7 +140,7 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    border-bottom: 1px solid rgb(70, 70, 70);
+    border-bottom: 1px solid crimson;
 }
 
 #home h1 {
@@ -206,14 +206,13 @@ a {
 #about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    border-bottom: 1px solid rgb(70, 70, 70);
+    border-bottom: 1px solid crimson;
 }
 
 #about h1 {
     font-size: 3rem;
+
 }
 
 #about p {
@@ -223,7 +222,6 @@ a {
 
 #about-container {
     padding: 1rem;
-    border: 1px solid crimson;
 }
 
 #projects {
@@ -237,7 +235,6 @@ a {
 
 #projects h1 {
     font-size: 3rem;
-    margin-bottom: 5rem;
 }
 
 #projects-grid {
