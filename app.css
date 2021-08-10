@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(0, 0%, 10%);
+    color: #DCDCDC;
+    margin-bottom: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    background-color: hsl(0, 0%, 10%);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid crimson;
+}
+
+#nav-logo {
+    display: flex;
+    width: 100%;
+
+}
+
+#nav-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: 0.1s ease-in;
+}
+
+#nav-logo a:hover {
+    background-color: crimson;
+    transition: 0.1s ease-in;
+}
+
+#nav-menu {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+}
+
+#nav-menu a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: 0.1s ease-in;
+    border-left: 1px solid crimson;
+    transition: 0.1s ease-in;
+}
+
+#nav-menu a:hover {
+    background-color: crimson;
+    transition: 0.1s ease-in;
+}
+
+@media screen and (max-width: 1200px) {
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 1rem;
+        border-left: 1px solid crimson;
+    }
+
+    #mobile-menu:hover {
+        background-color: crimson;
+    }
+
+    .mobile-menu-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 3px;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    #mobile-menu.cross .mobile-menu-bar:nth-child(1) {
+        transform: translate(0, 9px) rotate(45deg)
+    }
+
+    #mobile-menu.cross .mobile-menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.cross .mobile-menu-bar:nth-child(3) {
+        transform: translate(0, -9px) rotate(-45deg)
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        position: absolute;
+        top: -10000px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #nav-menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        height: 100%;
+        border-bottom: 1px solid crimson;
+        transition: all 0.1s ease;
+    }
+
+    #nav-menu a:hover {
+        background-color: crimson;
+        transition: all 0.1s ease;
+    }
+
+    #nav-menu.drop-down {
+        top: 60px;
+        background-color: hsla(0, 0%, 10%);
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home h2 {
+    font-size: 2rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#home-container {
+    padding: 1rem;
+    border: 1px solid crimson;
+}
+
+#underline {
+    display: block;
+    margin: 0.5rem 0;
+    width: 60%;
+    border: 1.5px solid crimson
+}
+
+@media screen and (max-width: 960px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home h2 {
+        font-size: 1.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#projects h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+#projects-button {
+    margin: 2.5rem 0rem;
+    padding: 10px 30px;
+    border: 2px solid crimson;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    transition: .3s ease background-color;
+}
+
+#projects-button:hover {
+    color: white;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.projects-card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border: 2px solid crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #292929;
+}
+
+.projects-card:nth-of-type(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("imgs/to-do-app.png");
+}
+
+.projects-card:nth-of-type(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("imgs/yelp-camp.png");
+}
+
+.projects-card p {
+    margin: 20px 20px 40px;
+    font-size: 18px;
+}
+
+.projects-card a {
+    margin: 0px 50px 10px 50px;
+    padding: 14px 24px;
+    background: #131313;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: 0.1s ease-in;
+}
+
+.projects-card a:hover {
+    transform: scale(1.075);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    #projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid crimson;
+    background-color: hsl(0, 0%, 10%);
+
+}
+
+#social {
+    display: flex;
+    height: 100%;
+}
+
+#social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    transition: 0.1s ease-in;
+    border-left: 1px solid crimson;
+}
+
+#social a:last-child {
+    border-right: 1px solid crimson;
+}
+
+#social a:hover {
+    background-color: crimson;
+    transition: background-color 0.1s ease;
+}
+
+#social img {
+    border-radius: 50%;
+    background-color: #DCDCDC;
+    width: 50px;
+    transition: background-color 0.1s ease;
+}
