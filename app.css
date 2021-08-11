@@ -62,7 +62,7 @@ a {
     transition: 0.1s ease;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
     #mobile-menu {
         display: flex;
         flex-direction: column;
