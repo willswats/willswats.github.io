@@ -199,6 +199,10 @@ a {
         font-size: 1rem;
     }
 
+    #home-anchors {
+        flex-direction: column;
+    }
+
     #home-anchors a {
         font-size: 1rem;
         padding: 0.5rem;
@@ -259,6 +263,10 @@ a {
         font-size: 1rem;
     }
 
+    #about-anchors {
+        flex-direction: column;
+    }
+
     #about-anchors a {
         font-size: 1rem;
         padding: 0.5rem;
@@ -280,7 +288,7 @@ a {
 
 #projects h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 #back-to-top {
@@ -370,17 +378,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80px;
+    height: 60px;
     border-top: 1px solid crimson;
     background-color: hsl(0, 0%, 10%);
-}
-
-#mail-link {
-    font-weight: bold;
-}
-
-#mail-link:hover {
-    color: crimson;
 }
 
 #social {
@@ -392,19 +392,25 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
+    width: 60px;
     height: 100%;
     transition: 0.1s ease-in;
+    transition: background-color 0.1s ease;
+    border-left: 1px solid crimson;
+}
+
+#social a:last-child {
+    border-right: 1px solid crimson;
+}
+
+
+#social a:hover {
+    background-color: crimson;
     transition: background-color 0.1s ease;
 }
 
 #social img {
     border-radius: 50%;
     background-color: #DCDCDC;
-    width: 50px;
-}
-
-#social img:hover {
-    background-color: crimson;
-    transition: background-color 0.1s ease;
+    width: 45px;
 }
