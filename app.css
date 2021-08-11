@@ -188,19 +188,20 @@ a {
 
 @media screen and (max-width: 960px) {
     #home h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #home h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #home p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #home-anchors a {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 
     #home-container {
@@ -255,11 +256,12 @@ a {
     }
 
     #about p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #about-anchors a {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 
     #about-container {
@@ -278,6 +280,7 @@ a {
 
 #projects h1 {
     font-size: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 #back-to-top {
@@ -285,6 +288,7 @@ a {
     transition: 0.1s background-color ease;
     font-size: 1.5rem;
     padding: 1rem;
+    margin-top: 0.5rem;
 }
 
 #back-to-top:hover {
@@ -292,16 +296,15 @@ a {
     transition: 0.1s background-color ease;
 }
 
-#projects-grid {
+#projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
 }
 
 .projects-card {
-    margin: 10px;
-    height: 425px;
-    width: 300px;
+    height: 250px;
+    width: 100%;
     border: 1px solid crimson;
     display: flex;
     flex-direction: column;
@@ -319,49 +322,65 @@ a {
         url("imgs/yelp-camp.png");
 }
 
-.projects-card p {
-    margin: 20px 20px 40px;
-    font-size: 18px;
+.projects-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.projects-card a {
-    margin: 0px 50px 10px 50px;
-    padding: 14px 24px;
-    background: rgba(255, 255, 255, 0.5);
-    color: black;
-    border-radius: 4px;
-    transition: 0.1s ease-in;
+.projects-card-btns {
+    display: flex;
 }
 
-.projects-card a:hover {
-    background-color: rgba(255, 255, 255, 1);
-    transition: 0.1s ease-in;
-    cursor: pointer;
+.projects-card-btns a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid crimson;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40px;
+    transition: 0.1s background-color ease;
 }
 
-@media screen and (max-width: 1300px) {
+.projects-card-btns a:hover {
+    background-color: crimson;
+    transition: 0.1s background-color ease;
+}
+
+@media screen and (max-width: 960px) {
     #projects h1 {
         font-size: 2rem;
     }
 
-    #projects-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #projects-grid {
+    #projects-container {
         grid-template-columns: 1fr;
     }
 }
 
 #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60px;
+    height: 80px;
     border-top: 1px solid crimson;
     background-color: hsl(0, 0%, 10%);
+}
+
+#mail-link {
+    font-weight: bold;
+}
+
+#mail-link:hover {
+    color: crimson;
 }
 
 #social {
@@ -373,18 +392,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 70px;
     height: 100%;
     transition: 0.1s ease-in;
-    border-left: 1px solid crimson;
-}
-
-#social a:last-child {
-    border-right: 1px solid crimson;
-}
-
-#social a:hover {
-    background-color: crimson;
     transition: background-color 0.1s ease;
 }
 
@@ -392,5 +402,9 @@ a {
     border-radius: 50%;
     background-color: #DCDCDC;
     width: 50px;
+}
+
+#social img:hover {
+    background-color: crimson;
     transition: background-color 0.1s ease;
 }
