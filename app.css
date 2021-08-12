@@ -1,3 +1,4 @@
+/* Base */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,22 @@ a {
     color: inherit;
 }
 
+/* Classes used in multiple sections */
+.underline {
+    display: block;
+    margin: 0.5rem 0;
+    width: 60%;
+    border: 1.5px solid crimson
+}
+
+.underline-small {
+    display: block;
+    margin: 0.5rem 0;
+    width: 30%;
+    border: 1.5px solid crimson
+}
+
+/* Nav */
 #nav {
     position: fixed;
     top: 0;
@@ -131,6 +148,7 @@ a {
     }
 }
 
+/* Home */
 #home {
     display: flex;
     flex-direction: column;
@@ -158,20 +176,7 @@ a {
     width: 60%;
     padding: 1rem;
     border: 1px solid crimson;
-}
-
-.underline {
-    display: block;
-    margin: 0.5rem 0;
-    width: 60%;
-    border: 1.5px solid crimson
-}
-
-.underline-small {
-    display: block;
-    margin: 0.5rem 0;
-    width: 30%;
-    border: 1.5px solid crimson
+    margin: 5% 0;
 }
 
 #home-anchors {
@@ -218,6 +223,7 @@ a {
     }
 }
 
+/* About */
 #about {
     display: flex;
     flex-direction: column;
@@ -245,6 +251,7 @@ a {
     width: 60%;
     padding: 1rem;
     border: 1px solid crimson;
+    margin: 5% 0;
 }
 
 #about-anchors {
@@ -297,6 +304,7 @@ a {
     min-height: 100vh;
 }
 
+/* Projects */
 #projects {
     display: flex;
     flex-direction: column;
@@ -308,7 +316,8 @@ a {
 
 #projects h1 {
     font-size: 3rem;
-    margin: 0.5rem 0;
+    margin: 5% 0 0.5rem;
+
 }
 
 #projects-info {
@@ -320,7 +329,7 @@ a {
     border: 1px solid crimson;
     font-size: 1.5rem;
     padding: 1rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 5%;
     transition: background-color 0.1s ease;
 }
 
@@ -407,6 +416,7 @@ a {
     }
 }
 
+/* Footer */
 #footer {
     display: flex;
     flex-direction: column;
