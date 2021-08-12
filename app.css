@@ -391,6 +391,12 @@ a {
     margin: 2rem;
 }
 
+.projects-card-inner h2,
+p {
+    opacity: 0.9;
+}
+
+
 .projects-card-btns {
     display: flex;
     height: 10%;
