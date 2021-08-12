@@ -254,6 +254,19 @@ a {
     margin: 5% 0;
 }
 
+#about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+#about-skills p {
+    margin: 0;
+    width: 150px;
+    text-align: center;
+    border: 1px solid crimson;
+}
+
 #about-anchors {
     display: flex;
 }
@@ -282,6 +295,10 @@ a {
 
     #about p {
         font-size: 1rem;
+    }
+
+    #about-skills p {
+        width: 120px;
     }
 
     #about-anchors {
