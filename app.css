@@ -150,7 +150,8 @@ a {
 
 #home p {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+
 }
 
 #home-container {
@@ -159,10 +160,17 @@ a {
     border: 1px solid crimson;
 }
 
-#underline {
+.underline {
     display: block;
     margin: 0.5rem 0;
     width: 60%;
+    border: 1.5px solid crimson
+}
+
+.underline-small {
+    display: block;
+    margin: 0.5rem 0;
+    width: 30%;
     border: 1.5px solid crimson
 }
 
@@ -223,9 +231,14 @@ a {
     font-size: 3rem;
 }
 
+#about h2 {
+    font-size: 2rem;
+}
+
 #about p {
     font-size: 1.5rem;
-    margin: 0.5rem;
+    margin-bottom: 1rem;
+
 }
 
 #about-container {
@@ -254,6 +267,10 @@ a {
 @media screen and (max-width:960px) {
     #about h1 {
         font-size: 2rem;
+    }
+
+    #about h2 {
+        font-size: 1rem;
     }
 
     #about p {
