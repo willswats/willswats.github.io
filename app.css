@@ -382,24 +382,38 @@ a {
         url("imgs/yelp-camp.png");
 }
 
-.projects-card-inner {
+.projects-card-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 100%;
+}
+
+.projects-card-title {
+    font-size: 2rem;
+    transition: 0.3s all ease;
+    position: absolute;
+}
+
+.projects-card-title.hide {
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+
+.projects-card-text {
     margin: 2rem;
+    opacity: 0;
+    transition: 0.3s all ease;
 }
 
-.projects-card-inner h2,
-p {
-    opacity: 0.9;
+.projects-card-text.show {
+    opacity: 1;
+    transition: 0.3s all ease;
 }
-
 
 .projects-card-btns {
     display: flex;
-    height: 10%;
 }
 
 .projects-card-btns a {
