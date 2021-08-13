@@ -17,18 +17,18 @@ const hideMobileMenu = () => {
 navMenu.addEventListener('click', hideMobileMenu)
 
 const cardTops = document.getElementsByClassName('projects-card-top')
-const cardTitles = document.getElementsByClassName('projects-card-title')
 const cardTexts = document.getElementsByClassName('projects-card-text')
+const cardOverlays = document.getElementsByClassName('projects-card-overlay')
 
 for (let i = 0, cardTopsLength = cardTops.length; i < cardTopsLength; i++) {
     cardTops[i].addEventListener('mouseenter', () => {
-        cardTitles[i].classList.toggle('hide')
+        cardOverlays[i].classList.toggle('show')
         cardTexts[i].classList.toggle('show')
     })
 }
 for (let i = 0, cardTopsLength = cardTops.length; i < cardTopsLength; i++) {
     cardTops[i].addEventListener('mouseleave', () => {
-        cardTitles[i].classList.remove('hide')
+        cardOverlays[i].classList.remove('show')
         cardTexts[i].classList.remove('show')
     })
 }
