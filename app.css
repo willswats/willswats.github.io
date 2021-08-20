@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: hsl(0, 0%, 10%);
-    color: #DCDCDC;
+    color: #fff;
 }
 
 a {
@@ -507,6 +507,6 @@ a {
 
 #social img {
     border-radius: 50%;
-    background-color: #DCDCDC;
+    background-color: #fff;
     width: 45px;
 }
