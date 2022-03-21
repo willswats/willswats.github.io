@@ -2,4 +2,4 @@
 
 My portfolio website.
 
-Live version [_here_](https://williamwatson.dev/).
+Live version [here](https://williamwatson.dev/).
