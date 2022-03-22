@@ -1,162 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./imgs/favicon.ico">
-    <link rel="stylesheet" href="app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./imgs/favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
     <title>William Watson | Web Developer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="nav">
-        <div id="nav-logo">
-            <a id="nav-logo" href="https://williamwatson.dev">williamwatson.dev</a>
-        </div>
-        <div id="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-        </div>
-        <div id="mobile-menu">
-            <span class="mobile-menu-bar"></span>
-            <span class="mobile-menu-bar"></span>
-            <span class="mobile-menu-bar"></span>
-        </div>
+      <a id="nav-logo" href="https://williamwatson.dev">williamwatson.dev</a>
+      <div id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <div id="mobile-menu">
+        <span class="mobile-menu-bar"></span>
+        <span class="mobile-menu-bar"></span>
+        <span class="mobile-menu-bar"></span>
+      </div>
     </nav>
     <section id="home">
-        <div id="home-container">
-            <h1>William Watson</h1>
-            <h2>Web Developer</h2>
-            <span class="underline"></span>
-            <p>Hi, I'm William, I'm an aspiring web developer based in Southampton, UK.</p>
-            <div id="home-anchors">
-                <a href="#about">About Me</a>
-                <a href="mailto:williamstuwatson@gmail.com">Contact Me</a>
-                <a rel="noopener noreferrer" target="_blank"
-                    href="https://drive.google.com/file/d/1W3be-9MPNYkjhGHThjkwVDSJSmg1gR5w/view?usp=sharing">View
-                    CV</a>
-            </div>
-        </div>
-        </div>
+      <div id="home-container">
+        <h1>William Watson</h1>
+        <h2>Web Developer</h2>
+        <span class="underline"></span>
+        <p>
+          An inspired individual who is eager for their start in web
+          development.
+        </p>
+      </div>
+      <a href="#about" class="arrow-btn"><span class="arrow-down"></span></a>
     </section>
-    <section id="about">
-        <div id="about-container">
-            <h1>About Me</h1>
-            <span class="underline"></span>
-            <p>My knowledge of web development has been gained through online courses and projects of my own. My goal as
-                a
-                web developer is to always be learning new technologies and skills, not only because it will benefit me
-                in the long-term, but it's also just good fun.</p>
-            <p>When I'm not coding I spend my time doing Brazilian Jiu Jitsu and Kickboxing, or relaxing; playing
-                video
-                games, listening to podcasts, or
-                reading.
-            </p>
-            <p>If you would like to find out more about me, please do not hesitate to get in touch, all of my details
-                are
-                available on my CV. </p>
-                <h2>Skills</h2>
-            <span class="underline-small"></span>
-            <div id="about-skills">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JS</p>
-                <p>Node</p>
-                <p>Express</p>
-                <p>EJS</p>
-                <p>MongoDB</p>
-                <p>Mongoose</p>
-                <p>NPM</p>
-                <p>Git</p>
-                <p>Bootstrap</p>
-            </div>
-            <div id="about-anchors">
-                <a href="#projects">View Projects</a>
-                <a href="mailto:williamstuwatson@gmail.com">Contact Me</a>
-                <a rel="noopener noreferrer" target="_blank"
-                    href="https://drive.google.com/file/d/1W3be-9MPNYkjhGHThjkwVDSJSmg1gR5w/view?usp=sharing">View
-                    CV</a>
-            </div>
-        </div>
-    </section>
-    <div id="full-page">
-        <section id="projects">
-            <h1>Projects</h1>
-            <p id="projects-info">View the repositories for more info on each project!</p>
-            <div id="projects-container">
-                <div class="projects-card">
-                    <div class="projects-card-top">
-                        <h2 class="projects-card-title">React Calculator</h2>
-                        <div class="projects-card-overlay">
-                            <p class="projects-card-text">A calculator application built with React.</p>
-                        </div>
-                    </div>
-                    <div class="projects-card-btns">
-                        <a href="https://react-calculator-willswats.herokuapp.com/" target="_blank" rel="noopener noreferrer">View Project</a>
-                        <a href="https://github.com/willswats/react-calculator" target="_blank" rel="noopener noreferrer">View Repository</a>
-                    </div>
-                </div>
-                <div class="projects-card">
-                    <div class="projects-card-top">
-                        <h2 class="projects-card-title">To Do App</h2>
-                        <div class="projects-card-overlay">
-                            <p class="projects-card-text">
-                                An application to add, edit, delete, and check tasks, each with their own priority level.</p>
-                        </div>
-                    </div>
-                    <div class="projects-card-btns">
-                        <a href="https://to-do-app-willswats.herokuapp.com" target="_blank"
-                            rel="noopener noreferrer">View
-                            Project</a>
-                        <a href="https://github.com/willswats/to-do-app" target="_blank" rel="noopener noreferrer">View
-                            Repository</a>
-                    </div>
-                </div>
-                <div class="projects-card">
-                    <div class="projects-card-top">
-                        <h2 class="projects-card-title">Yelp Camp</h2>
-                        <div class="projects-card-overlay">
-                            <p class="projects-card-text">
-                                An application for browsing campgrounds and their reviews. </p>
-                        </div>
-                    </div>
-                    <div class="projects-card-btns">
-                        <a href="https://yelp-camp-willswats.herokuapp.com/" target="_blank"
-                            rel="noopener noreferrer">View
-                            Project</a>
-                        <a href="https://github.com/willswats/yelp-camp" target="_blank" rel="noopener noreferrer">View
-                            Repository</a>
-                    </div>
-                </div>
-                <div class="projects-card">
-                    <div class="projects-card-top">
-                        <h2 class="projects-card-title">Nothing Here Yet</h2>
-                        <div class="projects-card-overlay">
-                            <p class="projects-card-text">I'm working on it!</p>
-                        </div>
-                    </div>
-                    <div class="projects-card-btns">
-                        <a>View Project</a>
-                        <a>View Repository</a>
-                    </div>
-                </div>
-            </div>
-            <a id="back-to-top" href="#home">Back To Top</a>
-        </section>
-        <section id="footer">
-            <div id="social">
-                <a href="https://github.com/willswats"><img src="imgs/github.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/willswats/"><img src="imgs/linkedin.png" alt=""></a>
-                <a href="https://twitter.com/willswats"><img src="imgs/twitter.png" alt=""></a>
-            </div>
-        </section>
-    </div>
-    <script src="app.js"></script>
-</body>
 
+    <section id="about">
+      <div id="about-container">
+        <h1>About</h1>
+        <span class="underline"></span>
+        <p>
+          Web development is great as it gives me the chance to constantly learn
+          new skills, as well as solve problems and be creative. My knowledge of
+          web development has been acquired through online courses, and then
+          further solidified through creating projects of my own.
+        </p>
+        <p>
+          When I'm not coding I spend my time practicing Brazilian Jiu Jitsu, or
+          relaxing; playing video games, listening to podcasts, or reading.
+        </p>
+        <p>
+          If you would like to find out more about me, please do not hesitate to
+          get in touch, all of my details are available on my CV.
+        </p>
+        <div id="about-btns">
+          <a
+            class="primary-btn"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://drive.google.com/file/d/1W3be-9MPNYkjhGHThjkwVDSJSmg1gR5w/view?usp=sharing"
+          >
+            View CV</a
+          >
+          <a class="primary-btn" href="mailto:williamstuwatson@gmail.com"
+            >Contact</a
+          >
+        </div>
+      </div>
+      <a href="#projects" class="arrow-btn"><span class="arrow-down"></span></a>
+    </section>
+
+    <section id="projects">
+      <div id="projects-container">
+        <h1>Projects</h1>
+        <p id="projects-description">
+          View the repositories for more info on each project!
+        </p>
+        <div id="projects-grid">
+          <div class="projects-card">
+            <div class="projects-card-top">
+              <h2>React Calculator</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">
+                  A calculator application built with React.
+                </p>
+              </div>
+            </div>
+            <div class="projects-card-btns">
+              <a
+                href="https://react-calculator-willswats.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/willswats/react-calculator"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Repository</a
+              >
+            </div>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-top">
+              <h2>To Do App</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">
+                  An application to add, edit, delete, and check tasks, each
+                  with their own priority level.
+                </p>
+              </div>
+            </div>
+            <div class="projects-card-btns">
+              <a
+                href="https://to-do-app-willswats.herokuapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/willswats/to-do-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Repository</a
+              >
+            </div>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-top">
+              <h2>Yelp Camp</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">
+                  An application for browsing campgrounds and their reviews.
+                </p>
+              </div>
+            </div>
+            <div class="projects-card-btns">
+              <a
+                href="https://yelp-camp-willswats.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/willswats/yelp-camp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Repository</a
+              >
+            </div>
+          </div>
+
+          <div class="projects-card">
+            <div class="projects-card-top">
+              <h2>Nothing here yet</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">I'm working on it!</p>
+              </div>
+            </div>
+            <div class="projects-card-btns">
+              <a>View Project</a>
+              <a>View Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="footer-arrow">
+          <a href="#home" class="arrow-btn"><span class="arrow-up"></span></a>
+        </div>
+        <div id="footer-btns">
+          <a href="https://github.com/willswats"
+            ><img src="imgs/github-white.png" alt="GitHub"
+          /></a>
+          <a href="https://www.linkedin.com/in/willswats/"
+            ><img src="imgs/linkedin-white.png" alt="LinkedIn"
+          /></a>
+          <a href="https://twitter.com/willswats"
+            ><img src="imgs/twitter-white.png" alt="Twitter"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>
