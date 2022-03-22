@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <nav id="nav">
+      <a id="nav-logo" href="https://williamwatson.dev">williamwatson.dev</a>
+      <div id="nav-menu">
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item" href="#projects">Projects</a>
+      </div>
+      <div id="mobile-menu">
+        <span class="mobile-menu-bar"></span>
+        <span class="mobile-menu-bar"></span>
+        <span class="mobile-menu-bar"></span>
+      </div>
+    </nav>
+
     <section id="home">
       <div id="home-container">
         <h1>William Watson</h1>
@@ -67,6 +81,11 @@
           <div class="projects-card">
             <div class="projects-card-top">
               <h2>React Calculator</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">
+                  A calculator application built with React.
+                </p>
+              </div>
             </div>
             <div class="projects-card-btns">
               <a
@@ -85,9 +104,16 @@
               >
             </div>
           </div>
+
           <div class="projects-card">
             <div class="projects-card-top">
               <h2>To Do App</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">
+                  An application to add, edit, delete, and check tasks, each
+                  with their own priority level.
+                </p>
+              </div>
             </div>
             <div class="projects-card-btns">
               <a
@@ -106,9 +132,15 @@
               >
             </div>
           </div>
+
           <div class="projects-card">
             <div class="projects-card-top">
               <h2>Yelp Camp</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">
+                  An application for browsing campgrounds and their reviews.
+                </p>
+              </div>
             </div>
             <div class="projects-card-btns">
               <a
@@ -127,9 +159,13 @@
               >
             </div>
           </div>
+
           <div class="projects-card">
             <div class="projects-card-top">
               <h2>Nothing here yet</h2>
+              <div class="projects-card-overlay">
+                <p class="projects-card-text">I'm working on it!</p>
+              </div>
             </div>
             <div class="projects-card-btns">
               <a class="project-btn">View Project</a>
@@ -137,7 +173,8 @@
             </div>
           </div>
         </div>
-        <a class="top-btn" href="#home">Back To Top</a>
+
+        <a id="top-btn" href="#home">Back To Top</a>
       </div>
 
       <div id="footer">
