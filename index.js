@@ -10,7 +10,7 @@ mobileMenu.addEventListener('click', showMobileMenu);
 // Hide mobile menu
 const hideMobileMenu = () => {
   const cross = document.querySelector('.cross');
-  if (window.innerWidth <= 960 && cross) {
+  if (window.innerWidth <= 768 && cross) {
     mobileMenu.classList.toggle('cross');
     navMenu.classList.toggle('drop-down');
   }
