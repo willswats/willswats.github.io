@@ -223,7 +223,7 @@ a {
 
 #home .arrow-btn {
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
 }
 
 @media screen and (max-width: 960px) {
@@ -294,7 +294,7 @@ a {
 
 #about .arrow-btn {
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
 }
 
 @media screen and (max-width: 960px) {
