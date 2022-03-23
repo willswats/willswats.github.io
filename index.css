@@ -85,7 +85,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .primary-btn {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -102,15 +102,6 @@ a {
   background-color: #3a3a3a;
 }
 
-.mobile-menu-bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 3px;
-  background: #fff;
-  transition: 0.3s ease;
-}
-
 @media screen and (max-width: 960px) {
   .nav-btn {
     display: flex;
@@ -120,6 +111,15 @@ a {
     height: 100%;
     border-left: none;
     border-bottom: 2px solid #6a6a6a;
+  }
+
+  .mobile-menu-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    background: #fff;
+    transition: 0.3s ease;
   }
 }
 
@@ -216,6 +216,7 @@ a {
   height: 60px;
   width: 100%;
   z-index: 999;
+  transition: 1s ease;
 }
 
 #nav-logo {
@@ -293,9 +294,9 @@ a {
 #home-container {
   background-color: #2a2a2a;
   border: 2px solid #6a6a6a;
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
   width: 60%;
-  margin: 0.5rem 0 0.5rem 0;
+  transition: 1s ease;
 }
 
 #home h1 {
@@ -310,9 +311,14 @@ a {
   font-size: 1.5rem;
 }
 
-#home .arrow-btn {
+#home-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+#home-arrow .arrow-btn {
   position: relative;
-  bottom: 40px;
+  top: 30px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -331,7 +337,7 @@ a {
   }
 
   #home p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -350,7 +356,7 @@ a {
 
   #home-container {
     width: 95%;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
   }
 }
 
@@ -376,9 +382,9 @@ a {
 #about-container {
   background-color: #2a2a2a;
   border: 2px solid #6a6a6a;
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
   width: 60%;
-  margin: 0.5rem 0 0.5rem 0;
+  transition: 1s ease;
 }
 
 #about-btns {
@@ -389,9 +395,14 @@ a {
   margin-right: 0.5rem;
 }
 
-#about .arrow-btn {
+#about-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+#about-arrow .arrow-btn {
   position: relative;
-  bottom: 40px;
+  top: 30px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -404,6 +415,7 @@ a {
   #about h1 {
     font-size: 2.5rem;
   }
+
   #about p {
     font-size: 1.25rem;
   }
@@ -428,7 +440,7 @@ a {
 
   #about-container {
     width: 95%;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
   }
 }
 
@@ -467,6 +479,7 @@ a {
   gap: 0.5rem;
   width: 80%;
   margin: 0.5rem 0 0.5rem 0;
+  transition: 1s ease;
 }
 
 #projects .projects-card:nth-of-type(1) {
