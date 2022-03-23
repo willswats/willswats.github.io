@@ -22,20 +22,6 @@ a {
 }
 
 /* General classes */
-.primary-btn {
-  text-align: center;
-  font-size: 1.8rem;
-  color: #fff;
-  background-color: #3a3a3a;
-  border: 2px solid #6a6a6a;
-  padding: 0.5rem;
-  transition: background-color 0.1s;
-}
-
-.primary-btn:hover {
-  background-color: #4a4a4a;
-}
-
 .arrow-btn {
   display: flex;
   justify-content: center;
@@ -77,18 +63,6 @@ a {
   border: 1px solid #6a6a6a;
 }
 
-@media screen and (max-width: 960px) {
-  .primary-btn {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .primary-btn {
-    font-size: 1rem;
-  }
-}
-
 /* Nav classes */
 .nav-btn {
   background-color: #2a2a2a;
@@ -98,6 +72,7 @@ a {
   border-bottom: 2px solid #6a6a6a;
   transition: background-color 0.1s;
 }
+
 .nav-btn:hover {
   background-color: #3a3a3a;
 }
@@ -118,8 +93,36 @@ a {
     width: 25px;
     height: 3px;
     margin: 3px;
-    background: #fff;
-    transition: 0.3s ease;
+    background-color: #fff;
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+  }
+}
+
+/* About classes */
+.about-btn {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #3a3a3a;
+  border: 2px solid #6a6a6a;
+  padding: 0.5rem;
+  transition: background-color 0.1s;
+}
+
+.about-btn:hover {
+  background-color: #4a4a4a;
+}
+
+@media screen and (max-width: 960px) {
+  .about-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-btn {
+    font-size: 1rem;
   }
 }
 
@@ -216,7 +219,6 @@ a {
   height: 60px;
   width: 100%;
   z-index: 999;
-  transition: 1s ease;
 }
 
 #nav-logo {
@@ -296,7 +298,6 @@ a {
   border: 2px solid #6a6a6a;
   padding: 4rem 4rem 0 4rem;
   width: 60%;
-  transition: 1s ease;
 }
 
 #home h1 {
@@ -384,7 +385,6 @@ a {
   border: 2px solid #6a6a6a;
   padding: 4rem 4rem 0 4rem;
   width: 60%;
-  transition: 1s ease;
 }
 
 #about-btns {
@@ -479,7 +479,6 @@ a {
   gap: 0.5rem;
   width: 80%;
   margin: 0.5rem 0 0.5rem 0;
-  transition: 1s ease;
 }
 
 #projects .projects-card:nth-of-type(1) {
