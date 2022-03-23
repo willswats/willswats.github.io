@@ -1,4 +1,4 @@
 # todo
 
 - [ ] Implement BEM naming
-- [ ] Add more transititions
+- [ ] Improve mobile sizing
