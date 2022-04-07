@@ -13,13 +13,13 @@
   background-color: #4a4a4a;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .about-btn {
     font-size: 1.4rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .about-btn {
     font-size: 1rem;
   }
@@ -76,19 +76,24 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   #about h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #about p {
     font-size: 1.25rem;
   }
+
+  #about-container {
+    width: 95%;
+    padding: 2rem 2rem 0 2rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #about h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   #about p {
@@ -101,10 +106,5 @@
 
   #about-btns a {
     margin-top: 0.25rem;
-  }
-
-  #about-container {
-    width: 95%;
-    padding: 2rem 2rem 0 2rem;
   }
 }

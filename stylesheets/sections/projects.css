@@ -139,9 +139,9 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   #projects-top h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #projects-top p {
@@ -151,23 +151,23 @@
   #projects-grid h2 {
     font-size: 1.5rem;
   }
+
+  #projects-grid {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #projects-top h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   #projects-top p {
     font-size: 1rem;
   }
 
-  #projects-grid {
-    grid-template-columns: 1fr;
-    width: 95%;
-  }
-
   #projects-grid h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
