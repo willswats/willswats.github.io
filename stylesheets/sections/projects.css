@@ -75,17 +75,16 @@
   min-height: 100vh;
 }
 
-#projects h1 {
+#projects-top {
+  text-align: center;
+}
+
+#projects-top h1 {
   font-size: 3rem;
 }
 
-#projects h2 {
-  font-size: 2rem;
-}
-
-#projects-description {
+#projects-top p {
   font-size: 1.5rem;
-  text-align: center;
 }
 
 #projects-container {
@@ -94,7 +93,7 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin: 4rem 0 4rem 0;
+  margin: 4rem 0 3rem 0;
 }
 
 #projects-grid {
@@ -102,31 +101,35 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
   width: 80%;
-  margin: 0.5rem 0 0.5rem 0;
+  margin-top: 1rem;
 }
 
-#projects .projects-card:nth-of-type(1) {
+#projects-grid h2 {
+  font-size: 2rem;
+}
+
+#projects-grid .projects-card:nth-of-type(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../imgs/react-calculator.png');
   background-position: center;
 }
 
-#projects .projects-card:nth-of-type(2) {
+#projects-grid .projects-card:nth-of-type(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../imgs/to-do-app.png');
 }
 
-#projects .projects-card:nth-of-type(3) {
+#projects-grid .projects-card:nth-of-type(3) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../imgs/yelp-camp.png');
 }
 
-#projects .projects-btn:nth-of-type(1) {
+#projects-grid .projects-btn:nth-of-type(1) {
   border-top: 2px solid #6a6a6a;
   border-right: 2px solid #6a6a6a;
 }
 
-#projects .projects-btn:nth-of-type(2) {
+#projects-grid .projects-btn:nth-of-type(2) {
   border-top: 2px solid #6a6a6a;
 }
 
@@ -137,34 +140,34 @@
 }
 
 @media screen and (max-width: 960px) {
-  #projects h1 {
+  #projects-top h1 {
     font-size: 2.5rem;
   }
 
-  #projects h2 {
-    font-size: 1.5rem;
+  #projects-top p {
+    font-size: 1.25rem;
   }
 
-  #projects-description {
-    font-size: 1.25rem;
+  #projects-grid h2 {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #projects h1 {
+  #projects-top h1 {
     font-size: 2rem;
   }
 
-  #projects h2 {
-    font-size: 1.25rem;
-  }
-
-  #projects-description {
+  #projects-top p {
     font-size: 1rem;
   }
 
   #projects-grid {
     grid-template-columns: 1fr;
     width: 95%;
+  }
+
+  #projects-grid h2 {
+    font-size: 1.25rem;
   }
 }

@@ -8,11 +8,11 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./stylesheets/index.css" />
-    <link rel="stylesheet" href="./stylesheets/nav.css" />
-    <link rel="stylesheet" href="./stylesheets/home.css" />
-    <link rel="stylesheet" href="./stylesheets/about.css" />
-    <link rel="stylesheet" href="./stylesheets/projects.css" />
-    <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <link rel="stylesheet" href="./stylesheets/parts/nav.css" />
+    <link rel="stylesheet" href="./stylesheets/sections/home.css" />
+    <link rel="stylesheet" href="./stylesheets/sections/about.css" />
+    <link rel="stylesheet" href="./stylesheets/sections/projects.css" />
+    <link rel="stylesheet" href="./stylesheets/parts/footer.css" />
 
     <title>William Watson | Web Developer</title>
   </head>
@@ -39,7 +39,9 @@
         <h1>William Watson</h1>
         <h2>Web Developer</h2>
         <span class="underline"></span>
-        <p>An individual who is eager for their start in web development.</p>
+        <p>
+          A studious individual who is eager for their start in web development.
+        </p>
         <div id="home-arrow">
           <a href="#about" class="arrow-btn"
             ><span class="arrow-down"></span
@@ -55,7 +57,7 @@
         <span class="underline"></span>
         <p>
           I thoroughly enjoy web development as it has given me the opportunity
-          to constantly learn new skills, as well as solve problems and be
+          to constantly learn new skills, as well as to solve problems and be
           creative. My knowledge of web development has been acquired through
           online courses, and then further solidified through creating projects
           of my own.
@@ -92,10 +94,10 @@
     <!-- Projects -->
     <section id="projects">
       <div id="projects-container">
-        <h1>Projects</h1>
-        <p id="projects-description">
-          View the repositories for more info on each project!
-        </p>
+        <div id="projects-top">
+          <h1>Projects</h1>
+          <p>View the repositories for more info on each project!</p>
+        </div>
         <div id="projects-grid">
           <!-- Projects card-->
           <div class="projects-card">
