@@ -7,6 +7,8 @@
   width: 100%;
   background-color: #2a2a2a;
   border: 2px solid #6a6a6a;
+  border-radius: 2.5%;
+  overflow: hidden;
 }
 
 .projects-card-top {
@@ -100,8 +102,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
-  width: 80%;
   margin-top: 1rem;
+  width: 80%;
 }
 
 #projects-grid h2 {
@@ -145,7 +147,7 @@
   }
 
   #projects-top p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   #projects-grid h2 {
@@ -155,19 +157,5 @@
   #projects-grid {
     grid-template-columns: 1fr;
     width: 95%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #projects-top h1 {
-    font-size: 1.6rem;
-  }
-
-  #projects-top p {
-    font-size: 1rem;
-  }
-
-  #projects-grid h2 {
-    font-size: 1.2rem;
   }
 }

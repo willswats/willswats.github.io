@@ -5,6 +5,7 @@
   color: #fff;
   background-color: #3a3a3a;
   border: 2px solid #6a6a6a;
+  border-radius: 2.5%;
   padding: 0.5rem;
   transition: background-color 0.1s;
 }
@@ -16,12 +17,6 @@
 @media screen and (max-width: 768px) {
   .about-btn {
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .about-btn {
-    font-size: 1rem;
   }
 }
 
@@ -47,9 +42,12 @@
 #about-container {
   background-color: #2a2a2a;
   border: 2px solid #6a6a6a;
+  border-radius: 2.5%;
   padding: 4rem 4rem 0 4rem;
   margin: 4rem;
-  width: 60%;
+  min-width: 400px;
+  max-width: 1000px;
+  height: auto;
 }
 
 #about-btns {
@@ -70,41 +68,21 @@
   top: 30px;
 }
 
-@media screen and (max-width: 1400px) {
-  #about-container {
-    width: 80%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #about h1 {
     font-size: 2rem;
   }
 
-  #about p {
-    font-size: 1.25rem;
-  }
-
-  #about-container {
-    width: 95%;
-    padding: 2rem 2rem 0 2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #about h1 {
-    font-size: 1.6rem;
+  #about h2 {
+    font-size: 1.5rem;
   }
 
   #about p {
     font-size: 1rem;
   }
 
-  #about-btns {
-    flex-direction: column;
-  }
-
-  #about-btns a {
-    margin-top: 0.25rem;
+  #about-container {
+    min-width: 95%;
+    padding: 2rem 2rem 0 2rem;
   }
 }

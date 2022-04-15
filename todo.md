@@ -1,3 +1,1 @@
 # todo
-
-- [ ] Improve mobile sizing
