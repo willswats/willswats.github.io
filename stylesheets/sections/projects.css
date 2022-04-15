@@ -143,7 +143,7 @@
 
 @media screen and (max-width: 768px) {
   #projects-top h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #projects-top p {
@@ -151,7 +151,7 @@
   }
 
   #projects-grid h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #projects-grid {
