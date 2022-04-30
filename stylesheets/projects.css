@@ -1,5 +1,4 @@
-/* Projects classes */
-.projects-card {
+.projects__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +10,28 @@
   overflow: hidden;
 }
 
-.projects-card-top {
+.projects__card:nth-of-type(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../imgs/react-weather.png');
+}
+
+.projects__card:nth-of-type(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../imgs/react-calculator.png');
+  background-position: center;
+}
+
+.projects__card:nth-of-type(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../imgs/to-do-app.png');
+}
+
+.projects__card:nth-of-type(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../imgs/yelp-camp.png');
+}
+
+.projects__card-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -20,7 +40,11 @@
   height: 100%;
 }
 
-.projects-card-overlay {
+.projects__card-heading {
+  font-size: 2rem;
+}
+
+.projects__card-overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,28 +59,24 @@
   height: 0;
 }
 
-.projects-card-overlay.show {
+.projects__card-overlay.show {
   height: 100%;
   transition: 0.3s all ease;
 }
 
-.projects-card-text {
+.projects__card-description {
   opacity: 0;
   margin: 2rem;
   text-align: center;
   transition: 0.3s all ease;
 }
 
-.projects-card-text.show {
+.projects__card-description.show {
   opacity: 1;
   transition: 0.3s all ease;
 }
 
-.projects-card-btns {
-  display: flex;
-}
-
-.projects-btn {
+.projects__card-btn {
   text-align: center;
   color: #fff;
   background-color: #3a3a3a;
@@ -66,39 +86,49 @@
   width: 100%;
 }
 
-.projects-btn:hover {
+.projects__card-btn:hover {
   background-color: #4a4a4a;
 }
 
-/* Projects id's */
+.projects__card-btn:nth-of-type(1) {
+  border-top: 2px solid #6a6a6a;
+  border-right: 2px solid #6a6a6a;
+}
+
+.projects__card-btn:nth-of-type(2) {
+  border-top: 2px solid #6a6a6a;
+}
+
+@media screen and (max-width: 768px) {
+  .projects__card-heading {
+    font-size: 1.4rem;
+  }
+}
+
 #projects {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-#projects-top {
-  text-align: center;
-}
-
-#projects-top h1 {
-  font-size: 3rem;
-}
-
-#projects-top p {
-  font-size: 1.5rem;
-}
-
-#projects-container {
+#projects__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
   margin: 4rem 0 3rem 0;
 }
 
-#projects-grid {
+#projects__heading {
+  font-size: 3rem;
+}
+
+#projects__description {
+  font-size: 1.5rem;
+}
+
+#projects__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
@@ -106,55 +136,22 @@
   width: 80%;
 }
 
-#projects-grid h2 {
-  font-size: 2rem;
-}
-
-#projects-grid .projects-card:nth-of-type(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../imgs/react-calculator.png');
-  background-position: center;
-}
-
-#projects-grid .projects-card:nth-of-type(2) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../imgs/to-do-app.png');
-}
-
-#projects-grid .projects-card:nth-of-type(3) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../imgs/yelp-camp.png');
-}
-
-#projects-grid .projects-btn:nth-of-type(1) {
-  border-top: 2px solid #6a6a6a;
-  border-right: 2px solid #6a6a6a;
-}
-
-#projects-grid .projects-btn:nth-of-type(2) {
-  border-top: 2px solid #6a6a6a;
-}
-
 @media screen and (max-width: 1400px) {
-  #projects-grid {
+  #projects__grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #projects-top h1 {
+  #projects__heading {
     font-size: 1.8rem;
   }
 
-  #projects-top p {
+  #projects__description {
     font-size: 1rem;
   }
 
-  #projects-grid h2 {
-    font-size: 1.4rem;
-  }
-
-  #projects-grid {
+  #projects__grid {
     grid-template-columns: 1fr;
     width: 95%;
   }

@@ -1,4 +1,3 @@
-/* Sitewide styles */
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.ttf');
@@ -22,7 +21,6 @@ a {
   color: inherit;
 }
 
-/* Sitewide classes */
 .arrow-btn {
   display: flex;
   justify-content: center;
@@ -62,4 +60,12 @@ a {
   margin: 0.5rem 0 1rem 0;
   width: 60%;
   border: 1px solid #6a6a6a;
+}
+
+.center {
+  text-align: center;
+}
+
+.horizontal {
+  display: flex;
 }

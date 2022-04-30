@@ -1,5 +1,4 @@
-/* Footer classes */
-.icon {
+.footer__icon {
   width: 60px;
   border-radius: 50%;
   background-color: #3a3a3a;
@@ -8,11 +7,10 @@
   transition: background-color 0.1s ease;
 }
 
-.icon:hover {
+.footer__icon:hover {
   background-color: #4a4a4a;
 }
 
-/* Footer id's */
 #footer {
   display: flex;
   flex-direction: column;
@@ -20,17 +18,17 @@
   width: 100%;
 }
 
-#footer-arrow {
+#footer__arrow {
   display: flex;
   justify-content: center;
 }
 
-#footer-arrow .arrow-btn {
+#footer__arrow .arrow-btn {
   position: relative;
   top: 30px;
 }
 
-#footer-btns {
+#footer__container {
   padding-top: 40px;
   display: flex;
   justify-content: center;

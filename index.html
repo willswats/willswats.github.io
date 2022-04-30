@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./imgs/favicon.ico" />
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="./stylesheets/index.css" />
     <link rel="stylesheet" href="./stylesheets/nav.css" />
     <link rel="stylesheet" href="./stylesheets/home.css" />
@@ -18,31 +16,29 @@
   </head>
 
   <body>
-    <!-- Nav -->
     <nav id="nav">
-      <a id="nav-logo" href="https://williamwatson.dev">williamwatson.dev</a>
-      <div id="nav-menu">
-        <a class="nav-btn" href="#home">Home</a>
-        <a class="nav-btn" href="#about">About</a>
-        <a class="nav-btn" href="#projects">Projects</a>
+      <a id="nav__logo" href="https://williamwatson.dev">williamwatson.dev</a>
+      <div id="nav__menu">
+        <a class="nav__menu-btn" href="#home">Home</a>
+        <a class="nav__menu-btn" href="#about">About</a>
+        <a class="nav__menu-btn" href="#projects">Projects</a>
       </div>
-      <div id="mobile-menu">
-        <span class="mobile-menu-bar"></span>
-        <span class="mobile-menu-bar"></span>
-        <span class="mobile-menu-bar"></span>
+      <div id="nav__mobile-menu">
+        <span class="nav__mobile-menu-bar"></span>
+        <span class="nav__mobile-menu-bar"></span>
+        <span class="nav__mobile-menu-bar"></span>
       </div>
     </nav>
 
-    <!-- Home -->
     <section id="home">
-      <div id="home-container">
-        <h1>William Watson</h1>
-        <h2>Web Developer</h2>
+      <div id="home__container">
+        <h1 id="home__heading-one">William Watson</h1>
+        <h2 id="home__heading-two">Web Developer</h2>
         <span class="underline"></span>
-        <p>
+        <p id="home__description">
           A studious individual who is eager for their start in web development.
         </p>
-        <div id="home-arrow">
+        <div id="home__arrow">
           <a href="#about" class="arrow-btn"
             ><span class="arrow-down"></span
           ></a>
@@ -50,39 +46,38 @@
       </div>
     </section>
 
-    <!-- About -->
     <section id="about">
-      <div id="about-container">
-        <h1>About</h1>
+      <div id="about__container">
+        <h1 id="about__heading">About</h1>
         <span class="underline"></span>
-        <p>
+        <p class="about__description">
           I thoroughly enjoy web development as it has given me the opportunity
           to constantly learn new skills, solve problems and be creative. My
           knowledge of web development has been acquired through online courses,
           and then further solidified through creating projects of my own.
         </p>
-        <p>
+        <p class="about__description">
           When I'm not coding I spend my time practicing Brazilian Jiu Jitsu, or
           relaxing; playing video games, listening to podcasts, or reading.
         </p>
-        <p>
+        <p class="about__description">
           If you would like to find out more about me, please do not hesitate to
           get in touch, all of my details are available on my CV.
         </p>
-        <div id="about-btns">
+        <div class="horizontal">
           <a
-            class="about-btn"
+            class="about__btn"
             rel="noopener noreferrer"
             target="_blank"
             href="https://drive.google.com/file/d/1W3be-9MPNYkjhGHThjkwVDSJSmg1gR5w/view?usp=sharing"
           >
             View CV</a
           >
-          <a class="about-btn" href="mailto:williamstuwatson@gmail.com"
+          <a class="about__btn" href="mailto:williamstuwatson@gmail.com"
             >Contact</a
           >
         </div>
-        <div id="about-arrow">
+        <div id="about__arrow">
           <a href="#projects" class="arrow-btn"
             ><span class="arrow-down"></span
           ></a>
@@ -90,34 +85,60 @@
       </div>
     </section>
 
-    <!-- Projects -->
     <section id="projects">
-      <div id="projects-container">
-        <div id="projects-top">
-          <h1>Projects</h1>
-          <p>View the repositories for more info on each project!</p>
+      <div id="projects__container">
+        <div class="center">
+          <h1 id="projects__heading">Projects</h1>
+          <p id="projects__description">
+            View the repositories for more info on each project!
+          </p>
         </div>
-        <div id="projects-grid">
-          <!-- Projects card-->
-          <div class="projects-card">
-            <div class="projects-card-top">
-              <h2>React Calculator</h2>
-              <div class="projects-card-overlay">
-                <p class="projects-card-text">
+        <div id="projects__grid">
+          <div class="projects__card">
+            <div class="projects__card-content">
+              <h2 class="projects__card-heading">React Weather</h2>
+              <div class="projects__card-overlay">
+                <p class="projects__card-description">
+                  A weather application built with React.
+                </p>
+              </div>
+            </div>
+            <div class="horizontal">
+              <a
+                class="projects__card-btn"
+                href="https://react-weather-willswats.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Project</a
+              >
+              <a
+                class="projects__card-btn"
+                href="https://github.com/willswats/react-weather"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Repository</a
+              >
+            </div>
+          </div>
+          <div class="projects__card">
+            <div class="projects__card-content">
+              <h2 class="projects__card-heading">React Calculator</h2>
+              <div class="projects__card-overlay">
+                <p class="projects__card-description">
                   A calculator application built with React.
                 </p>
               </div>
             </div>
-            <div class="projects-card-btns">
+            <div class="horizontal">
               <a
-                class="projects-btn"
+                class="projects__card-btn"
                 href="https://react-calculator-willswats.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 >View Project</a
               >
               <a
-                class="projects-btn"
+                class="projects__card-btn"
                 href="https://github.com/willswats/react-calculator"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -125,27 +146,26 @@
               >
             </div>
           </div>
-          <!-- Projects card-->
-          <div class="projects-card">
-            <div class="projects-card-top">
-              <h2>To Do App</h2>
-              <div class="projects-card-overlay">
-                <p class="projects-card-text">
+          <div class="projects__card">
+            <div class="projects__card-content">
+              <h2 class="projects__card-heading">To Do App</h2>
+              <div class="projects__card-overlay">
+                <p class="projects__card-description">
                   An application to add, edit, delete, and check tasks, each
                   with their own priority level.
                 </p>
               </div>
             </div>
-            <div class="projects-card-btns">
+            <div class="horizontal">
               <a
-                class="projects-btn"
+                class="projects__card-btn"
                 href="https://to-do-app-willswats.herokuapp.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 >View Project</a
               >
               <a
-                class="projects-btn"
+                class="projects__card-btn"
                 href="https://github.com/willswats/to-do-app"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -153,26 +173,25 @@
               >
             </div>
           </div>
-          <!-- Projects card-->
-          <div class="projects-card">
-            <div class="projects-card-top">
-              <h2>Yelp Camp</h2>
-              <div class="projects-card-overlay">
-                <p class="projects-card-text">
+          <div class="projects__card">
+            <div class="projects__card-content">
+              <h2 class="projects__card-heading">Yelp Camp</h2>
+              <div class="projects__card-overlay">
+                <p class="projects__card-description">
                   An application for browsing campgrounds and their reviews.
                 </p>
               </div>
             </div>
-            <div class="projects-card-btns">
+            <div class="horizontal">
               <a
-                class="projects-btn"
+                class="projects__card-btn"
                 href="https://yelp-camp-willswats.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >View Project</a
               >
               <a
-                class="projects-btn"
+                class="projects__card-btn"
                 href="https://github.com/willswats/yelp-camp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -180,36 +199,28 @@
               >
             </div>
           </div>
-          <!-- Projects card-->
-          <div class="projects-card">
-            <div class="projects-card-top">
-              <h2>Nothing here yet</h2>
-              <div class="projects-card-overlay">
-                <p class="projects-card-text">I'm working on it!</p>
-              </div>
-            </div>
-            <div class="projects-card-btns">
-              <a class="projects-btn">View Project</a>
-              <a class="projects-btn">View Repository</a>
-            </div>
-          </div>
         </div>
       </div>
 
-      <!-- Footer -->
       <div id="footer">
-        <div id="footer-arrow">
+        <div id="footer__arrow">
           <a href="#home" class="arrow-btn"><span class="arrow-up"></span></a>
         </div>
-        <div id="footer-btns">
+        <div id="footer__container">
           <a href="https://github.com/willswats"
-            ><img class="icon" src="imgs/github-white.png" alt="GitHub"
+            ><img class="footer__icon" src="imgs/github-white.png" alt="GitHub"
           /></a>
           <a href="https://www.linkedin.com/in/willswats/"
-            ><img class="icon" src="imgs/linkedin-white.png" alt="LinkedIn"
+            ><img
+              class="footer__icon"
+              src="imgs/linkedin-white.png"
+              alt="LinkedIn"
           /></a>
           <a href="https://twitter.com/willswats"
-            ><img class="icon" src="imgs/twitter-white.png" alt="Twitter"
+            ><img
+              class="footer__icon"
+              src="imgs/twitter-white.png"
+              alt="Twitter"
           /></a>
         </div>
       </div>

@@ -1,16 +1,30 @@
-const cardTops = document.getElementsByClassName('projects-card-top');
-const cardTexts = document.getElementsByClassName('projects-card-text');
-const cardOverlays = document.getElementsByClassName('projects-card-overlay');
+const cardContentEls = document.getElementsByClassName(
+  'projects__card-content'
+);
+const cardTextEls = document.getElementsByClassName(
+  'projects__card-description'
+);
+const cardOverlayEls = document.getElementsByClassName(
+  'projects__card-overlay'
+);
 
-for (let i = 0, cardTopsLength = cardTops.length; i < cardTopsLength; i++) {
-  cardTops[i].addEventListener('mouseenter', () => {
-    cardOverlays[i].classList.toggle('show');
-    cardTexts[i].classList.toggle('show');
+for (
+  let i = 0, cardContentElsLength = cardContentEls.length;
+  i < cardContentElsLength;
+  i++
+) {
+  cardContentEls[i].addEventListener('mouseenter', () => {
+    cardTextEls[i].classList.toggle('show');
+    cardOverlayEls[i].classList.toggle('show');
   });
 }
-for (let i = 0, cardTopsLength = cardTops.length; i < cardTopsLength; i++) {
-  cardTops[i].addEventListener('mouseleave', () => {
-    cardOverlays[i].classList.remove('show');
-    cardTexts[i].classList.remove('show');
+for (
+  let i = 0, cardContentElsLength = cardContentEls.length;
+  i < cardContentElsLength;
+  i++
+) {
+  cardContentEls[i].addEventListener('mouseleave', () => {
+    cardTextEls[i].classList.remove('show');
+    cardOverlayEls[i].classList.remove('show');
   });
 }
