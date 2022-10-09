@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Hack, monospace;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,21 +17,22 @@ a {
   color: inherit;
 }
 
-.page {
+/* Home */
+.home {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  border-bottom: 1px solid #4a4a4a;
 }
 
-/* Nav */
-.page__nav {
+.home__nav {
   display: flex;
   height: 4rem;
   background-color: #2a2a2a;
   border-bottom: 1px solid #4a4a4a;
 }
 
-.page__nav-logo {
+.home__nav-logo {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -38,52 +40,60 @@ a {
   transition: background-color 0.1s;
 }
 
-.page__nav-logo:hover {
+.home__nav-logo:hover {
   background-color: #3a3a3a;
 }
 
-.page__nav-logo span {
+.home__nav-logo span {
   padding: 1rem;
 }
 
-.page__nav-anchor {
+.home__nav-anchor {
   padding: 1rem;
   font-size: 1.5rem;
   border-left: 1px solid #4a4a4a;
   transition: background-color 0.1s;
 }
 
-.page__nav-anchor:hover {
+.home__nav-anchor:hover {
   background-color: #3a3a3a;
 }
 
-.page__nav-menu {
+.home__nav-menu {
   display: none;
 }
 
-/* Body */
-.page__body {
+.home__content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin: 4rem;
 }
 
-.page__projects {
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.projects__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-  margin: 2rem;
+  flex-grow: 1;
+  margin: 4rem;
 }
 
-.page__projects-card {
+.projects__card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 20rem;
+  height: 100%;
   border: 1px solid #4a4a4a;
 }
 
-.page__projects-card-content {
+.projects__card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,24 +102,24 @@ a {
   font-size: 2rem;
 }
 
-.page__projects-card:nth-of-type(1) .page__projects-card-content {
+.projects__card:nth-of-type(1) .projects__card-content {
   background-color: #932420;
 }
 
-.page__projects-card:nth-of-type(2) .page__projects-card-content {
+.projects__card:nth-of-type(2) .projects__card-content {
   background-color: #10161d;
 }
 
-.page__projects-card:nth-of-type(3) .page__projects-card-content {
+.projects__card:nth-of-type(3) .projects__card-content {
   background-image: linear-gradient(#dc8c00, #2b2b2b);
   background-color: #2b2b2b;
 }
 
-.page__projects-card-anchors {
+.projects__card-anchors {
   display: flex;
 }
 
-.page__projects-card-anchor {
+.projects__card-anchor {
   text-align: center;
   width: 100%;
   color: #fff;
@@ -119,39 +129,37 @@ a {
   transition: background-color 0.1s;
 }
 
-.page__projects-card-anchor:hover {
+.projects__card-anchor:hover {
   background-color: #3a3a3a;
 }
 
-.page__projects-card-anchor:nth-of-type(1) {
+.projects__card-anchor:nth-of-type(1) {
   border-right: 1px solid #4a4a4a;
 }
 
-/* Footer */
-.page__footer {
+.projects__footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-color: #2a2a2a;
   border-top: 1px solid #4a4a4a;
 }
 
-.page__footer-anchor {
+.projects__footer-anchor {
   padding: 1rem;
   transition: background-color 0.1s;
   border-left: 1px solid #4a4a4a;
 }
 
-.page__footer-anchor:last-child {
+.projects__footer-anchor:last-child {
   border-right: 1px solid #4a4a4a;
 }
 
-.page__footer-anchor:hover {
+.projects__footer-anchor:hover {
   background-color: #3a3a3a;
 }
 
-.page__footer-anchor img {
+.projects__footer-anchor img {
   transform: scale(1.5);
 }
 
@@ -163,11 +171,11 @@ a {
   }
 
   /* Nav */
-  .page__nav-anchor {
+  .home__nav-anchor {
     display: none;
   }
 
-  .page__nav-menu {
+  .home__nav-menu {
     display: block;
     cursor: pointer;
     padding: 1rem;
@@ -175,17 +183,17 @@ a {
     border-left: 1px solid #4a4a4a;
   }
 
-  .page__nav-menu:hover {
+  .home__nav-menu:hover {
     background-color: #3a3a3a;
   }
 
   /* Body */
-  .page__projects {
+  .projects__grid {
     grid-template-columns: 1fr;
   }
 
   /* Footer */
-  .page__footer-anchor img {
+  .projects__footer-anchor img {
     transform: scale(1);
   }
 }
