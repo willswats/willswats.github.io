@@ -22,11 +22,12 @@ a {
   height: 100vh;
 }
 
-/* nav */
+/* Nav */
 .page__nav {
   display: flex;
   height: 4rem;
-  border-bottom: 1px solid #333333;
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 .page__nav-logo {
@@ -38,7 +39,7 @@ a {
 }
 
 .page__nav-logo:hover {
-  background-color: #333333;
+  background-color: #3a3a3a;
 }
 
 .page__nav-logo span {
@@ -48,20 +49,19 @@ a {
 .page__nav-a {
   padding: 1rem;
   font-size: 1.5rem;
-  border-left: 1px solid #333333;
+  border-left: 1px solid #4a4a4a;
   transition: background-color 0.1s;
 }
 
 .page__nav-a:hover {
-  background-color: #333333;
+  background-color: #3a3a3a;
 }
 
-/* body */
-
+/* Body */
 .page__body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex-grow: 1;
 }
 
 .page__projects {
@@ -71,13 +71,12 @@ a {
   margin: 2rem;
 }
 
-/* Projects */
 .page__projects-card {
   display: flex;
   flex-direction: column;
   text-align: center;
   height: 20rem;
-  border: 1px solid #333333;
+  border: 1px solid #4a4a4a;
 }
 
 .page__projects-card-content {
@@ -110,42 +109,62 @@ a {
   text-align: center;
   width: 100%;
   color: #fff;
-  border-top: 1px solid #333333;
+  background-color: #2a2a2a;
+  border-top: 1px solid #4a4a4a;
   padding: 0.5rem;
   transition: background-color 0.1s;
 }
 
 .page__projects-card-a:hover {
-  background-color: #333333;
+  background-color: #3a3a3a;
 }
 
 .page__projects-card-a:nth-of-type(1) {
-  border-right: 1px solid #333333;
+  border-right: 1px solid #4a4a4a;
 }
 
-/* footer */
+/* Footer */
 .page__footer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-top: 1px solid #333333;
+  background-color: #2a2a2a;
+  border-top: 1px solid #4a4a4a;
 }
 
 .page__footer-a {
   padding: 1rem;
   transition: background-color 0.1s;
-  border-left: 1px solid #333333;
+  border-left: 1px solid #4a4a4a;
 }
 
 .page__footer-a:last-child {
-  border-right: 1px solid #333333;
+  border-right: 1px solid #4a4a4a;
 }
 
 .page__footer-a:hover {
-  background-color: #333333;
+  background-color: #3a3a3a;
 }
 
 .page__footer-a img {
   transform: scale(1.5);
+}
+
+/* Breakpoints */
+@media screen and (max-width: 768px) {
+  /* Global */
+  html {
+    font-size: 10px;
+  }
+
+  /* Body */
+  .page__projects {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .page__footer-a img {
+    transform: scale(1);
+  }
 }

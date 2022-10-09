@@ -1,7 +1,13 @@
-# williamwatson.dev
+# williamwatson.dev <!-- omit in toc -->
 
-This is my portfolio web site.
+My portfolio website.
 
-Font is [Hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack).
+## Table of Contents <!-- omit in toc -->
 
-SVGs from [feather](https://github.com/feathericons/feather).
+- [Acknowledgements](#acknowledgements)
+
+## Acknowledgements
+
+The font is [Hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack).
+
+The SVGs are from [feather](https://github.com/feathericons/feather).
