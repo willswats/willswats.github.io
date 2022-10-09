@@ -17,22 +17,15 @@ a {
   color: inherit;
 }
 
-/* Home */
-.home {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  border-bottom: 1px solid #4a4a4a;
-}
-
-.home__nav {
+/* Nav */
+.nav {
   display: flex;
   height: 4rem;
   background-color: #2a2a2a;
   border-bottom: 1px solid #4a4a4a;
 }
 
-.home__nav-logo {
+.nav__logo {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -40,27 +33,35 @@ a {
   transition: background-color 0.1s;
 }
 
-.home__nav-logo:hover {
+.nav__logo:hover {
   background-color: #3a3a3a;
 }
 
-.home__nav-logo span {
+.nav__logo span {
   padding: 1rem;
 }
 
-.home__nav-anchor {
+.nav__anchor {
   padding: 1rem;
   font-size: 1.5rem;
   border-left: 1px solid #4a4a4a;
   transition: background-color 0.1s;
 }
 
-.home__nav-anchor:hover {
+.nav__anchor:hover {
   background-color: #3a3a3a;
 }
 
-.home__nav-menu {
+.nav__menu {
   display: none;
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 .home__content {
@@ -75,13 +76,14 @@ a {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  border-bottom: 1px solid #4a4a4a;
 }
 
-.projects__grid {
+.projects__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
   flex-grow: 1;
+  gap: 0.5rem;
   margin: 4rem;
 }
 
@@ -137,7 +139,8 @@ a {
   border-right: 1px solid #4a4a4a;
 }
 
-.projects__footer {
+/* Footer */
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,21 +148,21 @@ a {
   border-top: 1px solid #4a4a4a;
 }
 
-.projects__footer-anchor {
+.footer__anchor {
   padding: 1rem;
   transition: background-color 0.1s;
   border-left: 1px solid #4a4a4a;
 }
 
-.projects__footer-anchor:last-child {
+.footer__anchor:last-child {
   border-right: 1px solid #4a4a4a;
 }
 
-.projects__footer-anchor:hover {
+.footer__anchor:hover {
   background-color: #3a3a3a;
 }
 
-.projects__footer-anchor img {
+.footer__anchor img {
   transform: scale(1.5);
 }
 
@@ -171,11 +174,11 @@ a {
   }
 
   /* Nav */
-  .home__nav-anchor {
+  .nav__anchor {
     display: none;
   }
 
-  .home__nav-menu {
+  .nav__menu {
     display: block;
     cursor: pointer;
     padding: 1rem;
@@ -183,17 +186,17 @@ a {
     border-left: 1px solid #4a4a4a;
   }
 
-  .home__nav-menu:hover {
+  .nav__menu:hover {
     background-color: #3a3a3a;
   }
 
-  /* Body */
+  /* Projects */
   .projects__grid {
     grid-template-columns: 1fr;
   }
 
   /* Footer */
-  .projects__footer-anchor img {
+  .footer__anchor img {
     transform: scale(1);
   }
 }
