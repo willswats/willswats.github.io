@@ -43,7 +43,7 @@ a {
 }
 
 .page__nav-logo span {
-  margin-left: 1rem;
+  padding: 1rem;
 }
 
 .page__nav-anchor {
@@ -55,6 +55,10 @@ a {
 
 .page__nav-anchor:hover {
   background-color: #3a3a3a;
+}
+
+.page__nav-menu {
+  display: none;
 }
 
 /* Body */
@@ -156,6 +160,23 @@ a {
   /* Global */
   html {
     font-size: 10px;
+  }
+
+  /* Nav */
+  .page__nav-anchor {
+    display: none;
+  }
+
+  .page__nav-menu {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+    transition: background-color 0.1s;
+    border-left: 1px solid #4a4a4a;
+  }
+
+  .page__nav-menu:hover {
+    background-color: #3a3a3a;
   }
 
   /* Body */
