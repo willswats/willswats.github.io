@@ -215,6 +215,7 @@ a {
     font-size: 10px;
   }
 
+  /* Overlay */
   .overlay {
     position: fixed;
     width: 100%;
@@ -231,6 +232,7 @@ a {
     top: 0;
   }
 
+  /* Nav */
   .nav__menu {
     flex-direction: column;
     position: fixed;
