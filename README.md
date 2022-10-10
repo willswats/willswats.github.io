@@ -1,4 +1,4 @@
-# williamwatson.dev <!-- omit in toc -->
+# willswats.github.io <!-- omit in toc -->
 
 My portfolio website.
 

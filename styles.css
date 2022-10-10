@@ -25,6 +25,7 @@ a {
   height: 4rem;
   background-color: #2a2a2a;
   border-bottom: 1px solid #4a4a4a;
+  z-index: 2;
 }
 
 .nav__logo {
@@ -214,16 +215,30 @@ a {
     font-size: 10px;
   }
 
-  .nav__menu {
-    display: flex;
-    flex-direction: column;
-    height: 20rem;
+  .overlay {
+    position: fixed;
     width: 100%;
-    position: absolute;
+    height: 100%;
     top: -10000px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .nav__menu.drop-down {
+  .overlay.enable {
+    top: 0;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    position: fixed;
+    top: -10000px;
+    width: 100%;
+  }
+
+  .nav__menu.enable {
     top: 4rem;
   }
 
