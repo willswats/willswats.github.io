@@ -43,6 +43,10 @@ a {
   padding: 1rem;
 }
 
+.nav__menu {
+  display: flex;
+}
+
 .nav__anchor {
   padding: 1rem;
   font-size: 1.5rem;
@@ -210,8 +214,28 @@ a {
     font-size: 10px;
   }
 
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    top: -10000px;
+  }
+
+  .nav__menu.drop-down {
+    top: 4rem;
+  }
+
   .nav__anchor {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #2a2a2a;
+    border: none;
+    border-bottom: 1px solid #4a4a4a;
   }
 
   .nav__svg {
