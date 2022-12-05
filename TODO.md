@@ -6,8 +6,6 @@
 
 ## Medium Priority
 
-- [ ] Add accesibility
-
 ## Low Priority
 
 ## Done
