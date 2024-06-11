@@ -1,12 +1,12 @@
-# willswats.github.io <!-- omit in toc -->
+# willswats.github.io
 
 My portfolio website.
 
 [williamwatson.dev](https://williamwatson.dev/)
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
-- [Acknowledgements](#acknowledgements)
+[Acknowledgements](#acknowledgements)
 
 ## Acknowledgements
 
